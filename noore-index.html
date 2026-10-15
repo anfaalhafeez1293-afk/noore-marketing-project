@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOORÉ | Digital Marketing Final Project by Anfaal Hafeez</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--oud:#20140f;--paper:#fbf5f4;--sand:#eadcd5;--amber:#b7791f;--rose:#9c3a56;--mute:#6b5850;--serif:"Cormorant Garamond",Georgia,serif;--sans:Jost,system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{font:16px/1.65 var(--sans);color:var(--oud);background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+#bar{position:fixed;top:0;left:0;height:3px;background:var(--amber);width:0;z-index:9}
+nav{position:sticky;top:0;z-index:5;background:var(--oud);display:flex;gap:2px;overflow-x:auto;padding:10px 16px;align-items:center}
+nav b{font:700 22px var(--serif);color:#fff;margin-right:14px;letter-spacing:.04em}
+nav a{color:#d8c6bb;text-decoration:none;font-size:14px;padding:4px 10px;border-radius:6px;white-space:nowrap}
+nav a:hover{background:#3a2820;color:#fff}
+header{background:var(--oud);color:#fff;padding:60px 20px 70px}
+.wrap{max-width:1040px;margin:0 auto}
+.hero{display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+.hero>div{flex:1 1 380px}
+h1{font:700 clamp(40px,7vw,74px)/1.02 var(--serif)}
+header p{margin-top:18px;max-width:38em;color:#d8c6bb;font-size:18px}
+.btn{display:inline-block;margin-top:24px;padding:12px 24px;background:var(--amber);color:#fff;text-decoration:none;font-weight:600;border-radius:999px}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:34px}
+.stats b{font:700 38px var(--serif);display:block;color:var(--amber);line-height:1}
+.stats span{font-size:13px;color:#d8c6bb}
+svg.bt{width:170px;flex:0 0 auto;margin:0 auto}
+main{padding:20px}
+.intro{padding:40px 0 10px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.intro div{padding:18px;border-left:4px solid var(--rose);background:#fff}
+.intro b{font:700 22px var(--serif);display:block}
+section.week{padding:46px 0 10px;border-bottom:1px solid var(--sand)}
+h2{font:700 clamp(30px,4.5vw,46px)/1.1 var(--serif)}
+h2 small{display:block;font:500 15px var(--sans);color:var(--rose);margin-bottom:6px}
+details{margin:16px 0;background:#fff;border:1px solid var(--sand);border-radius:10px}
+summary{cursor:pointer;padding:18px 22px;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:600 26px var(--serif);color:var(--rose)}
+details[open] summary::after{content:"−"}
+summary h3{font:700 25px/1.2 var(--serif)}
+summary h3 em{font:500 14px var(--sans);font-style:normal;color:var(--rose);display:block}
+.in{padding:0 22px 22px}
+.in ul{margin:0 0 0 20px;color:var(--mute)}
+.in p.n{margin-top:14px;padding-top:14px;border-top:1px dashed var(--sand);max-width:64em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px;margin-top:18px}
+.box{padding:14px;border-radius:8px;background:var(--paper);border:1px solid var(--sand);font-size:15px}
+.box b{display:block;font:700 19px var(--serif)}
+.box i{font-style:normal;font-weight:600;color:var(--rose)}
+h4{font:700 23px var(--serif);margin-top:24px}
+.tabs{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+.tabs button{font:600 15px var(--sans);padding:9px 18px;border-radius:999px;border:1px solid var(--oud);background:#fff;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--oud);color:#fff}
+.pane{margin-top:12px;padding:16px;background:var(--paper);border:1px solid var(--sand);border-radius:8px}
+.kp{margin-top:10px}
+.kp div{display:flex;justify-content:space-between;font-size:14px}
+.kp span{display:block;height:8px;border-radius:4px;background:var(--sand);margin:4px 0 12px;overflow:hidden}
+.kp span i{display:block;height:100%;background:linear-gradient(90deg,var(--rose),var(--amber))}
+.road{margin-top:16px;border-left:3px solid var(--amber);padding-left:18px}
+.road div{margin-bottom:14px}
+table{width:100%;border-collapse:collapse;margin-top:16px;font-size:15px}
+th,td{padding:10px;border-bottom:1px solid var(--sand);text-align:left}
+th{background:var(--paper)}
+label{display:block;margin-bottom:12px;font-size:15px}
+footer{background:var(--oud);color:#d8c6bb;padding:40px 20px;margin-top:40px}
+footer h2{color:#fff;font-size:34px}
+footer a{color:#fff}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav id="nav"><b>NOORÉ</b></nav>
+<header><div class="wrap hero"><div>
+<h1>Fragrance, reimagined for the digital generation.</h1>
+<p>NOORÉ is a premium fragrance house inspired by South Asian attar heritage. This final project applies all 24 sessions of the Digital Marketing course, in order, to one launch plan for the brand.</p>
+<a class="btn" href="#w1">Start with Week 1</a>
+<div class="stats"><div><b>12</b><span>Weeks</span></div><div><b>24</b><span>Sessions</span></div><div><b>9</b><span>Frameworks and tools</span></div><div><b>90</b><span>Day launch plan</span></div></div>
+</div>
+<svg class="bt" viewBox="0 0 120 200" aria-label="NOORÉ perfume bottle"><rect x="46" y="6" width="28" height="22" rx="4" fill="#b7791f"/><rect x="52" y="28" width="16" height="14" fill="#8c5d17"/><rect x="14" y="42" width="92" height="140" rx="22" fill="#3a2820" stroke="#b7791f" stroke-width="2"/><rect x="30" y="86" width="60" height="54" rx="4" fill="none" stroke="#b7791f"/><text x="60" y="120" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#fff" letter-spacing="2">NOORÉ</text></svg>
+</div></header>
+<main class="wrap">
+<div class="intro">
+<div><b>Mission</b>Make premium, long-lasting fragrance accessible to young urban professionals without losing cultural roots.</div>
+<div><b>Target audience</b>Men and women aged 20 to 40 in major Pakistani cities who shop online and use Instagram, TikTok and WhatsApp.</div>
+<div><b>Unique value</b>Oud, rose and amber scents, small-batch quality, elegant packaging and a discovery set to try before buying.</div>
+</div>
+<div id="main"></div>
+</main>
+<footer><div class="wrap">
+<h2>Project creator: Anfaal Hafeez</h2>
+<p style="margin-top:10px;max-width:44em">Final project for the Digital Marketing course (Mon–Tue, 3:00 PM–5:00 PM, Girls class), prepared according to the Course Outline for Class. Prices and targets are illustrative and set for this project.</p>
+<p style="margin-top:12px">Email: <a href="mailto:anfaalhafeez1293@gmail.com">anfaalhafeez1293@gmail.com</a><br>Phone: <a href="tel:+923451236897">0345 1236 897</a></p>
+</div></footer>
+<script>
+const W=[
+["Introduction",[
+[1,"Introduction to Digital Marketing",["What is Digital Marketing?","Why It Matters Today","Digital Marketing Channels Overview","Career Paths and Job Roles","Real-world examples from Pakistan and global markets"],"Digital marketing means reaching and serving customers through search, social media, email, video and websites, with results we can measure. For NOORÉ it matters because buyers now discover fragrance on Instagram and TikTok before they enter any shop. Our seven channels: SEO, social media, email, WhatsApp, YouTube, Meta ads and a content blog. Roles behind them: SEO specialist, social media manager, content writer, performance marketer, freelancer. Examples: Khaadi and Sapphire sell heavily through Instagram and WhatsApp in Pakistan; Glossier grew through customer content worldwide."],
+[2,"Scope of Digital Marketing in Pakistan & Beyond",["Market Trends and Opportunities","Case Study Analysis: Digital Marketing Success Stories"],"Pakistan has a young, mobile-first population, growing online shopping and cash on delivery that lowers the fear of first purchase. The same skills also open dollar income through freelancing. SWOT and Porter's Five Forces show where NOORÉ stands.","swot"]]],
+["Marketing Funnels",[
+[3,"Marketing Funnels & Customer Journey",["What is a Funnel?","TOFU, MOFU, BOFU","AIDA Model","Mapping the Customer Journey"],"A funnel shows how strangers become buyers. NOORÉ's journey: sees a Reel, reads a scent story, orders the discovery set, receives a drip email, buys a full bottle, leaves a review. Tap each stage below to see its goal, channels and KPIs.","funnel"],
+[4,"Target Audience & Buyer Persona",["Market Segmentation","Demographic vs. Psychographic Targeting","Creating Buyer Personas using ChatGPT"],"Segments: young professionals, gift buyers, and wedding and Eid shoppers. Demographic targeting uses age, city and income; psychographic targeting uses values such as heritage, self-expression and quality. Persona, drafted with ChatGPT and edited by hand: Hira, 27, marketing executive in Lahore. She follows fragrance Reels, wants a unique scent under Rs. 6,000 and worries about fake products. NOORÉ answers with batch numbers, real reviews and a discovery set.","persona"]]],
+["Freelancing Platforms",[
+[5,"Freelancing Platforms Overview",["Fiverr, Upwork, Freelancer, Guru, PeoplePerHour","What Clients Look For"],"Fiverr suits packaged services, Upwork long contracts, Freelancer and Guru bidding, and PeoplePerHour UK clients. Clients look for relevant samples, clear results, quick replies and honest reviews. This NOORÉ plan is my sample case study for those platforms."],
+[6,"Profile Optimization & Gig Creation",["Using ChatGPT to Write Profile and Gig Descriptions","Designing Thumbnails with Canva and Looka"],"Gig idea: \"I will create a 30-day social media content plan for your fragrance brand.\" ChatGPT drafts the profile and gig text and I rewrite it in my own voice. Canva designs the thumbnail and Looka a logo mark in NOORÉ's oud and amber colours."]]],
+["Content Marketing",[
+[7,"Content Marketing Fundamentals",["Blogging, Copywriting, Email Marketing","Educational, Promotional, and Entertaining Content"],"Educational: how oud, rose and amber notes differ. Promotional: the discovery set offer. Entertaining: a quiz, \"Which NOORÉ scent matches your mood?\". Blogs earn search traffic, copywriting sells on product pages, and email brings buyers back."],
+[8,"Article Writing Using AI",["Using ChatGPT for Content Ideas","Proofreading and Editing with Grammarly"],"ChatGPT proposes topics such as \"How to make perfume last longer in Pakistani summers\". I write the draft with real product knowledge, then Grammarly checks grammar and tone before it is published."]]],
+["SEO",[
+[9,"SEO Basics & On-Page SEO",["Meta Tags","Alt Text","URL Structure","Writing SEO Content with Surfer AI"],"Title tag: \"Oud Perfume in Pakistan | NOORÉ\". Alt text describes each bottle in plain words. Clean URLs such as /perfumes/oud-collection. Surfer AI compares a draft with top-ranking pages so it covers the terms searchers expect.","seo"],
+[10,"Off-Page SEO & Link Building",["Backlinks","Forums","Guest Posting","Finding High Domain Authority Sites"],"Links from trusted sites act as votes for NOORÉ. Plan: guest posts on Pakistani lifestyle blogs, helpful answers in fragrance forums, and a domain authority check before pitching any site."]]],
+["Keyword Research",[
+[11,"Keyword Research Tools",["Ubersuggest","Google Keyword Planner","Keyword Intent","CPC","Search Volume"],"\"Perfume\" has high volume but unclear intent. \"Buy oud perfume online Pakistan\" has lower volume but buying intent and a lower cost per click (CPC), so we target it first. Ubersuggest and Google Keyword Planner supply volume and CPC data.","kw"],
+[12,"SEO Audit & AI Blog Generation",["Using Surfer AI and ChatGPT for Blog Generation","Live SEO Audit"],"Audit checklist: page speed, mobile layout, titles, headings, broken links and image size. AI writes a first draft; I add brand stories, facts and a human voice before publishing."]]],
+["Social Media",[
+[13,"Social Media Platforms Overview",["Facebook, Instagram, TikTok, LinkedIn, X","Business Page vs. Personal Profile"],"Instagram and TikTok lead discovery, Facebook supports ads and local groups, LinkedIn suits corporate gifting, and X carries brand voice. A business page offers analytics, ads and a shop button that a personal profile does not."],
+[14,"Graphic Design with AI Tools",["Canva","Adobe Firefly","Leonardo AI","Creating Sample Social Media Posts"],"Canva holds the post templates; Firefly and Leonardo AI create mood backgrounds such as rose gardens and amber light. Sample posts: scent story carousel, bottle reveal and customer review card."]]],
+["Marketing Strategy",[
+[15,"Social Media Marketing Strategy",["Strategy vs. Tactics","Scheduling Tools: Notion and Buffer"],"Strategy is the goal and the plan: become the heritage fragrance brand young Pakistanis trust online. Tactics are the weekly actions: three Reels, two carousels, one email. Notion holds the calendar and Buffer schedules posts. Below: the 4Ps and the 90-day roadmap.","fourp"],
+[16,"Meta Ads Basics",["Audience Targeting","Ad Copywriting Formats"],"Target ages 20 to 40 in major cities with interests in perfume and gifting, and retarget people who watched half a Reel. Copy formats: problem and solution, story hook, and offer-led (\"Try 5 scents for Rs. 1,499\"). Targets we track:","kpi"]]],
+["Campaign Building",[
+[17,"Email Marketing Campaign Building",["List Building","Drip Campaigns","Mailchimp and ConvertKit"],"The list grows through a free \"find your scent\" guide. Drip sequence: welcome, scent story, discovery set offer, review request. Mailchimp suits beginners; ConvertKit suits creators.","drip"],
+[18,"Lead Generation Techniques",["Lead Magnet Creation with AI","Lead Generation Case Examples"],"Lead magnet: a PDF guide to fragrance notes, drafted with AI and designed in Canva. Cases to study: Sephora's quiz sign-ups and local brands giving a first-order code in exchange for an email."]]],
+["YouTube Channel",[
+[19,"YouTube Channel Setup & Video SEO",["Channel Branding","TubeBuddy and vidIQ"],"Banner and icon use NOORÉ's oud and amber, and the description carries search keywords. TubeBuddy and vidIQ suggest tags and titles like \"Top 5 oud perfumes in Pakistan\"."],
+[20,"Short-Form Content Creation",["Pictory","Runway ML","Reels and YouTube Shorts Creation"],"Pictory turns blog posts into short videos and Runway ML edits clips. One shoot becomes a Reel, a Short and a TikTok, each with a hook in the first two seconds."]]],
+["Gig Polishing",[
+[21,"Freelancing Gig Polishing & Mock Client Chat",["Client Communication Practice","Common Mistakes","Scam Avoidance"],"Reply quickly, confirm scope in writing and set a revision limit. Common mistakes: vague gig titles and over-promising. Scam signs: moving the chat off-platform, free test work and suspicious payment links."],
+[22,"Portfolio Website Setup",["Wix and Notion","Uploading Previous Work to a Portfolio"],"Each portfolio entry shows goal, work done and result. Wix gives full design control and Notion is the fastest to publish. This NOORÉ project becomes the first case study."]]],
+["Earning Plan",[
+[23,"Proposal Writing & Earning Plan",["Freelancing Strategy","Weekly Income Goal Setting"],"A strong proposal restates the client's problem, shows a relevant sample, gives price and timeline, and ends with a next step. Plan: send five proposals a week, aim for one client a month, and raise rates after three good reviews.","earn"],
+[24,"Final Presentation & Mock Interview",["Dress Code","Presentation Style","Confidence Building"],"Dress neat and professional. Present in the order problem, plan, result, with this site as the visual. Practise answers aloud, keep eye contact, and be ready to explain every decision in this project."]]]
+];
+const B=(t,d,c)=>`<div class="box"><b>${t}</b>${c?`<i>${c}</i> `:""}${d}</div>`;
+const F=[["TOFU: Awareness","Goal: get strangers to notice NOORÉ.","Reels, TikTok, SEO blogs, Meta ads.","Reach, video views, site visits."],["MOFU: Consideration","Goal: build trust and interest.","Email drip, discovery set, scent quiz, reviews.","Email sign-ups, click rate, quiz completions."],["BOFU: Purchase","Goal: turn interest into an order.","WhatsApp order, offer code, retargeting, COD.","Conversion rate, cost per order, average order value."],["Retention","Goal: bring buyers back.","Review requests, refill reminders, referrals.","Repeat purchase rate, referrals, reviews."]];
+const K=[["Website visitors per month",70],["Email list growth",55],["Discovery set orders",60],["Repeat purchase rate",35]];
+const X={
+swot:()=>`<div class="grid">${B("Strengths","Heritage story, small-batch quality, shareable packaging. Action: lead every post with the story.")}${B("Weaknesses","New brand, low trust, buyers cannot smell online. Action: discovery set and real reviews.")}${B("Opportunities","Growing e-commerce, social reach, wedding and Eid gifting. Action: seasonal campaigns.")}${B("Threats","Imported brands, counterfeits, price comparison. Action: batch codes and clear value.")}</div><h4>Porter's Five Forces</h4><div class="grid">${B("Rivalry","Many local and imported brands. Response: stand out with story and design.","High.")}${B("New entrants","Instagram makes starting easy. Response: build community and loyalty.","High.")}${B("Buyer power","Prices are easy to compare. Response: bundles and value gifts.","High.")}${B("Supplier power","Oils and bottles have alternatives. Response: two suppliers per input.","Medium.")}${B("Substitutes","Attar and body sprays. Response: position as long-lasting luxury.","Medium.")}</div>`,
+funnel:()=>`<div class="tabs" role="tablist">${F.map((f,i)=>`<button role="tab" aria-selected="${i==0}" data-i="${i}">${f[0].split(":")[0]}</button>`).join("")}</div><div class="pane" id="fp"></div><h4>AIDA Model</h4><div class="grid">${B("Attention","A 5-second Reel: \"The scent of rain on a rose garden.\"")}${B("Interest","The story and notes behind each scent.")}${B("Desire","Reviews, gift box photos, small-batch scarcity.")}${B("Action","\"Order the discovery set\" button and WhatsApp link.")}</div>`,
+fourp:()=>`<div class="grid">${B("Product","Oud, rose and amber eau de parfum, a discovery set and gift boxes.")}${B("Price","Rs. 4,500 to 7,500; discovery set Rs. 1,499 (illustrative).")}${B("Place","Website, Instagram shop, WhatsApp, delivery across Pakistan with COD.")}${B("Promotion","Reels, SEO blogs, email drips, Meta ads, creator reviews.")}</div><h4>90-day roadmap</h4><div class="road"><div><b>Days 1 to 30, foundation:</b> website, SEO basics, social profiles, brand content bank.</div><div><b>Days 31 to 60, launch:</b> Reels, email list, discovery set offer, first Meta ads.</div><div><b>Days 61 to 90, optimisation:</b> review analytics, scale winning ads, start referral and repeat offers.</div></div>`,
+kpi:()=>`<div class="kp">${K.map(k=>`<div><em style="font-style:normal">${k[0]}</em><em style="font-style:normal">${k[1]}% of target</em></div><span><i style="width:${k[1]}%"></i></span>`).join("")}</div><p style="font-size:13px;color:var(--mute)">Illustrative benchmarks for this project; real results depend on budget and execution.</p>`
+};
+X.persona=()=>`<div class="grid">${B("Hira, 27","Marketing executive, Lahore. Income Rs. 90,000 a month (assumed for this project).")}${B("Goals","A signature scent that lasts all day and feels unique.")}${B("Pain points","Fake products, no way to smell online, high prices.")}${B("Where she is","Instagram Reels, TikTok, WhatsApp groups.")}${B("Buying trigger","Honest reviews and a low-risk discovery set.")}</div>`;
+X.seo=()=>`<h4>Search result preview</h4><div class="box"><b style="color:#1a0dab;font-size:20px">Oud Perfume in Pakistan | NOORÉ</b><span style="color:#0b6b2d;font-size:13px">noore.pk › perfumes › oud-collection</span><br>Small-batch oud, rose and amber perfumes inspired by attar heritage. Try the discovery set and get free delivery across Pakistan.</div><div class="grid">${B("Title","Under 60 characters, main keyword first.")}${B("Meta description","Under 160 characters with a clear offer.")}${B("Headings","One H1, then H2s for each section.")}${B("Images","Compressed, with descriptive alt text.")}</div>`;
+X.kw=()=>`<table><tr><th>Keyword</th><th>Volume</th><th>Intent</th><th>CPC</th></tr><tr><td>perfume</td><td>High</td><td>Browsing</td><td>Low</td></tr><tr><td>oud perfume price in Pakistan</td><td>Medium</td><td>Comparing</td><td>Medium</td></tr><tr><td>buy oud perfume online Pakistan</td><td>Low</td><td>Buying</td><td>Medium</td></tr><tr><td>perfume gift set for her</td><td>Medium</td><td>Buying</td><td>High</td></tr></table><p style="font-size:13px;color:var(--mute)">Levels are illustrative; real figures come from Ubersuggest and Keyword Planner.</p>`;
+X.drip=()=>`<div class="road"><div><b>Day 0:</b> welcome email and the free fragrance notes guide.</div><div><b>Day 2:</b> the story behind NOORÉ's oud.</div><div><b>Day 5:</b> discovery set offer.</div><div><b>Day 9:</b> customer reviews and how to wear each scent.</div><div><b>Day 14:</b> reminder and a first-order code.</div></div>`;
+X.earn=()=>`<h4>Weekly income planner</h4><div class="box"><label>Proposals per week: <b id="e1">5</b><input type="range" min="1" max="15" value="5" style="width:100%" oninput="earn()" id="r1"></label><label>Win rate: <b id="e2">15</b>%<input type="range" min="5" max="40" value="15" style="width:100%" oninput="earn()" id="r2"></label><label>Average project: Rs. <b id="e3">15000</b><input type="range" min="5000" max="50000" step="1000" value="15000" style="width:100%" oninput="earn()" id="r3"></label><p id="eo" style="margin-top:10px"></p></div>`;
+function earn(){const a=+r1.value,b=+r2.value,c=+r3.value,w=a*4*b/100;e1.textContent=a;e2.textContent=b;e3.textContent=c;eo.innerHTML=`About <b>${w.toFixed(1)}</b> projects a month, around <b>Rs. ${Math.round(w*c).toLocaleString()}</b> a month (estimate only).`}
+const m=document.getElementById("main"),n=document.getElementById("nav");
+W.forEach((w,i)=>{
+n.insertAdjacentHTML("beforeend",`<a href="#w${i+1}">Week ${i+1}</a>`);
+let h=`<section class="week" id="w${i+1}"><h2><small>Week ${i+1}</small>${w[0]}</h2>`;
+w[1].forEach(s=>{h+=`<details><summary><h3><em>Session ${s[0]}</em>${s[1]}</h3></summary><div class="in"><ul>${s[2].map(t=>`<li>${t}</li>`).join("")}</ul><p class="n">${s[3]}</p>${s[4]?X[s[4]]():""}</div></details>`});
+m.insertAdjacentHTML("beforeend",h+"</section>");
+});
+const fp=document.getElementById("fp"),show=i=>{const f=F[i];fp.innerHTML=`<b>${f[0]}</b><br>${f[1]}<br>Channels: ${f[2]}<br>KPIs: ${f[3]}`};
+if(fp){show(0);document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-selected","false"));b.setAttribute("aria-selected","true");show(+b.dataset.i)})}
+document.querySelectorAll("details").forEach(d=>d.addEventListener("toggle",()=>{}));
+document.querySelector("details").open=true;earn();
+addEventListener("scroll",()=>{document.getElementById("bar").style.width=100*scrollY/(document.body.scrollHeight-innerHeight)+"%"});
+</script>
+</body>
+</html>
